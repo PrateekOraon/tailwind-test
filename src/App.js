@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Heroes from './heroes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen flex items-center justify-center bg-purple-600 bg-opacity-25">
+      <div className="w-4/5 h-4/5 shadow-xl bg-white dark:bg-red-200 rounded-lg p-40 text-4xl">
+        <button class="btn-indigo">
+          Click me
+        </button>
+        <Heroes />
+      </div>
     </div>
   );
 }
